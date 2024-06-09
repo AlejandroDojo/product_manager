@@ -41,7 +41,7 @@ function App() {
         <Route path="/" element={<NewProduct newItem={newItem} collectionItems={collectionItems} deleteItem={deleteItem}/> }/>
         <Route path="/products" element={<AllProductList collectionItems={collectionItems} deleteItem={deleteItem}/>}/>
         <Route path="/:id" element={<DetailProduct collectionItems={collectionItems}/>}/>
-        <Route path="/update/:id" element={<UpdateProduct updateItem={updateItem}/> }/>
+        <Route path="/:id/edit" element={<UpdateProduct updateItem={updateItem}/> }/>
       </Routes>
     </div>
   );

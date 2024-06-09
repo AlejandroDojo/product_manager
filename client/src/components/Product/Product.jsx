@@ -9,7 +9,7 @@ const Product = ({title, price, description, id, deleteItem}) => {
                     <Link to={`/${id}`}>{title}</Link> 
                     <span>${price}</span></h2>
                 <p>{description}</p>
-                <Link to={`/update/${id}`}>
+                <Link to={`/${id}/edit`}>
                     <button>Modify</button>
                 </Link>
                 <DeleteProduct deleteItem={deleteItem} id={id}/>
